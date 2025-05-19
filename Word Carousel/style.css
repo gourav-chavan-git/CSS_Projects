@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-word: #5134ff;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack the heading and animated text */
+    justify-content: center;
+    align-items: center;
+}
+
+h2:after {  
+    content: "";
+    animation: 10s swap infinite;
+    background: var(--bg-word);
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+@keyframes swap {
+    0% {
+        content: "Coding";
+    }
+    25% {
+        content: "Making Origami";
+    }
+    50% {
+        content: "Pottery Making!";
+    }
+    75% {
+        content: "Exploring New Things";
+    }
+    100% {
+        content: "Reading Novels...";
+    }
+}
