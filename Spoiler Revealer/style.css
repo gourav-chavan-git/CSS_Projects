@@ -1,0 +1,51 @@
+:root {
+    --spoiler-color: #151515; /* hidden color */
+    --spoiler-hover-bg: #070707; /* Background color (hover) */
+    --spoiler-hover-color: #ffffff; 
+}
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f9f9f9;
+    color: #434040;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.6em;
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 100;
+    color: #070707;
+}
+
+.post {
+    background: #ffffff;
+    padding: 1.5em;
+    border-radius: 1em;
+    margin: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.29);
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-4px); 
+}
+
+.spoiler {
+    background-color: var(--spoiler-color);
+    color: var(--spoiler-color);
+    padding: 0.1em 0.3em;
+    border-radius: 0.2em;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.spoiler:hover {
+    background-color: var(--spoiler-hover-bg);
+    color: var(--spoiler-hover-color); 
+    font-weight: 100;
+}
+
+
+
